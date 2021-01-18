@@ -1,0 +1,349 @@
+body {
+    color: #03262c;
+}
+
+h1 {
+    color: #03262c;
+}
+
+.nav-blank {
+    background-color: white;
+    padding: 0;
+}
+
+.flag-tel {
+    background-color: black;
+    color: white;
+}
+
+.phone-call-balckflag {
+    color: white;
+}
+
+.phone-call-balckflag:hover {
+    color: greenyellow;
+}
+
+.logo-brand {
+    width: 100px;
+    height: auto;
+}
+
+.hero {
+    background: url("../img/mainsite/banner-720.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/*-------------------------------------------*/
+/*Hero COPYS*/
+/*-------------------------------------------*/
+.hero-stuff {
+    position: relative;
+    top: 5px;
+}
+
+.hero-stuff h1 {
+    font-size: 35px;
+    font-weight: 700;
+    padding-top: 0px;
+    text-align: center !important;
+}
+
+.hero-stuff h1 span {
+    color: #1d8007;
+    font-weight: 600;
+}
+
+.hero-stuff h3 {
+    width: 100%;
+    text-align: center !important;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #03262c;
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+}
+
+.hero-stuff p {
+    text-align: center !important;
+    font-size: 15px;
+    font-weight: 200;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: rgba(3, 38, 44, 0.5);
+}
+/*-------------------------------------------*/
+/*Hero COPYS*/
+/*-------------------------------------------*/
+
+/*----------------------BEST SELLER SECTION----------------------------*/
+.best-seller-tittle {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+    .logo-brand {
+        width: 300px;
+        height: auto;
+    }
+
+    .hero-container {
+        height: 40vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .hero {
+        background: url("../img/mainsite/banner-1024.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 100%;
+    }
+    /*-------------------------------------------*/
+    /*Hero COPYS*/
+    /*-------------------------------------------*/
+    .hero-stuff {
+        position: relative;
+        top: 0px;
+    }
+
+    .hero-stuff h1 {
+        font-size: 35px;
+        font-weight: 700;
+        padding-top: 0px;
+    }
+
+    .hero-stuff h1 span {
+        color: #1d8007;
+        font-weight: 600;
+    }
+
+    .hero-stuff h3 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: #03262c;
+        display: inline-block;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .hero-stuff p {
+        font-size: 15px;
+        font-weight: 200;
+        padding-right: 20px;
+        padding-left: 20px;
+        line-height: 1.5;
+        color: #fff;
+        background-color: rgba(3, 38, 44, 0.5);
+    }
+    /*-------------------------------------------*/
+    /*Hero COPYS*/
+    /*-------------------------------------------*/
+
+    /*----------------------BEST SELLER SECTION----------------------------*/
+    .best-seller-tittle {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .prod-image{
+        padding-top: 50px;
+        width: 200px;
+        height: auto;
+    }
+
+}
+
+/* For desktop Small an medium: */
+@media only screen and (min-width: 768px) {
+    .logo-brand {
+        width: 350px;
+        height: auto;
+    }
+
+    .hero-container {
+        height: 70vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .hero {
+        background: url("../img/mainsite/banner.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+    }
+
+    /*-------------------------------------------*/
+    /*Hero COPYS*/
+    /*-------------------------------------------*/
+    .hero-stuff {
+        position: absolute;
+        top: 40px;
+        left: 10px;
+    }
+
+    .hero-stuff h1 {
+        font-size: 45px;
+        line-height: 1;
+        font-weight: 700;
+        margin-bottom: 0px;
+        width: 60%;
+        text-align: left !important;
+    }
+
+    .hero-stuff h1 span {
+        color: #1d8007;
+        font-weight: 800;
+    }
+
+    .hero-stuff h3 {
+        width: 45%;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        background-color: #03262c;
+        margin-left: 15px;
+        padding-left: 5px;
+        margin-bottom: 0px;
+        text-align: left !important;
+    }
+
+    .hero-stuff p {
+        width: 48%;
+        font-size: 15px;
+        font-weight: 300;
+        padding-right: 5px;
+        padding-left: 5px;
+        line-height: 1;
+        margin-top: 0px;
+        text-align: left !important;
+    }
+    /*-------------------------------------------*/
+    /*Hero COPYS*/
+    /*-------------------------------------------*/
+
+    /*----------------------BEST SELLER SECTION----------------------------*/
+    .best-seller-tittle {
+        font-size: 40px;
+        text-align: center;
+        font-weight: 600;
+    }
+}
+
+/* For desktop large: */
+
+@media only screen and (min-width: 1024px) {
+    .logo-brand {
+        width: 400px;
+        height: auto;
+    }
+
+    .hero-container {
+        height: 80vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .hero {
+        background: url("../img/mainsite/banner.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 100%;
+    }
+    /*-------------------------------------------*/
+    /*Hero COPYS*/
+    /*-------------------------------------------*/
+    .hero-stuff {
+        position: absolute;
+        top: 100px;
+        left: 60px;
+    }
+
+    .hero-stuff h1 {
+        font-size: 70px;
+        line-height: 1;
+        font-weight: 700;
+        margin-bottom: 0px;
+        width: 60%;
+        text-align: left !important;
+    }
+
+    .hero-stuff h1 span {
+        color: #1d8007;
+        font-weight: 800;
+    }
+
+    .hero-stuff h3 {
+        width: 55%;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 400;
+        background-color: #03262c;
+        margin-left: 15px;
+        padding-left: 10px;
+        text-align: left !important;
+    }
+
+    .hero-stuff p {
+        width: 45%;
+        font-size: 18px;
+        font-weight: 300;
+        padding-right: 10px;
+        padding-left: 10px;
+        line-height: 1.2;
+        margin-top: 10px;
+        display: inline-flex;
+        text-align: left !important;
+    }
+    /*-------------------------------------------*/
+    /*Hero COPYS*/
+    /*-------------------------------------------*/
+
+    /*----------------------BEST SELLER SECTION----------------------------*/
+    .best-seller-tittle {
+        font-size: 60px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+
+
+}

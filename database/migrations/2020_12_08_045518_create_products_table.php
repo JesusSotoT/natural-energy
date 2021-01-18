@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->text('description');
             $table->text('image');
             $table->integer('status');
+            $table->boolean('best_seller');
             $table->timestamps();
         });
     }
