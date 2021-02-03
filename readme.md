@@ -52,9 +52,9 @@
     MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"  
     MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"        
       
-6.- Despues debemos ir de nuevo al terminal y ejecutar el comando `php artisan migrate --seed` , esto se conectara con la base de datos declarada en el archivo .env y creara las tablas y atributos necesarios asi como los registros del usuario admin.  
+6.- Despues debemos ir de nuevo al terminal y ejecutar el comando `php artisan migrate --seed` , esto se conectara con la base de datos declarada en el archivo .env y creara las tablas y atributos necesarios asi como los registros del usuario admin.    
 
-7.- Seguido de ello , debemos ejecutar los comandos de instlacion de dependencias npm  `npm install && run dev`.
-8.- Despues de seguir estos pasos , deberiamos ver el proyecto ya desplegado.  
+7.- Seguido de ello , debemos ejecutar los comandos de instlacion de dependencias npm  `npm install && run dev`.  
+8.- Despues de seguir estos pasos , deberiamos ver el proyecto ya desplegado.    
 
 
