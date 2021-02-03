@@ -16,6 +16,13 @@
           <h4 class="card-title"> Todos los productos</h4>
         </div>
         <div class="card-body">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-right">
+                        <a href="{{ route('new-product') }}" class="btn btn-success">Crear Nuevo Producto</a>
+                    </div>
+                </div>
+            </div>
           <div class="table-responsive">
             <table class="table">
               <thead class=" text-primary">
@@ -26,6 +33,9 @@
                   Nombre
                 </th>
                 <th>
+                    Contenido
+                  </th>
+                <th class="text-right">
                   Imagen
                 </th>
                 <th class="text-center">
@@ -36,16 +46,21 @@
                   @foreach ($product as $p)
                   <tr>
                     <td>{{ $p->id }}</td>
-                    <td>{{ $p->name }}</td>
-                    <td><img src="{{ $p->image }}" alt="Imagen producto {{ $p->id }}"></td>
+                    <td width="40%">{{ $p->name }}</td>
+                    <td width="10%">{{ $p->content }}</td>
+                    @if ($p->image == null)
+                    <td width="20%" class="text-right"><img class="img-fluid" width="25%" src="{{ asset('assets') }}/products/generic.jpg" alt="Imagen producto {{ $p->id }}"></td>
+                    @else
+                    <td class="text-right"><img class="img-fluid" width="25%" src="{{ asset('assets') }}/products/{{ $p->image }}" alt="Imagen producto {{ $p->id }}"></td>
+                    @endif
                     <td class="text-center">
-                          <a type="button" href="{{route("user.edit",$p->id)}}" rel="tooltip" class="btn btn-success btn-icon btn-sm " data-original-title="" title="">
+                       <!--  <a type="button" href="{{route("user.edit",$p->id)}}" rel="tooltip" class="btn btn-success btn-icon btn-sm " data-original-title="" title="">
                             <i class="now-ui-icons ui-2_settings-90"></i>
-                          </a>
-                        <form action="{{ route('user.destroy', $p->id) }}" method="post" style="display:inline-block;" class ="delete-form">
+                          </a> -->
+                        <form action="{{ route('destroy-product', $p->id) }}" method="post" style="display:inline-block;" class ="delete-form">
                           @csrf
-                          @method('delete')
-                          <button type="button" rel="tooltip" class="btn btn-danger btn-icon btn-sm delete-button" data-original-title="" title="" onclick="confirm('{{ __('Are you sure you want to delete this user?') }}') ? this.parentElement.submit() : ''">
+                          <input type="text" name="id" hidden value="{{ $p->id }}">
+                          <button type="button" rel="tooltip" class="btn btn-danger btn-icon btn-sm delete-button" data-original-title="" title="" onclick="confirm('{{ __('Esta Seguro de eliminar el producto?') }}') ? this.parentElement.submit() : ''">
                             <i class="now-ui-icons ui-1_simple-remove"></i>
                           </button>
                         </form>

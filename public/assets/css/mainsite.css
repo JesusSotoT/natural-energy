@@ -95,10 +95,78 @@ h1 {
     font-weight: 600;
 }
 
+.best-seller-product-name {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn-gradient{
+    background: #07322a;
+        color: white;
+        border-radius: 12px;
+        padding: 12px 48px;
+        box-shadow: 0 6px 30px -10px #385a54;
+        transition: all 0.5s ease;
+        border: 0;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .btn-gradient1{
+        background: #07322a;
+        width: 50%;
+            color: white;
+            border-radius: 12px;
+            padding: 10px 5px;
+            box-shadow: 0 6px 30px -10px #385a54;
+            transition: all 0.5s ease;
+            border: 0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+    .btn-gradient:hover{
+      box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+      transform: scale(0.940);
+    }
+
+    .btn-gradient1:hover{
+        color: #dcedd8;
+        box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+        transform: scale(0.950);
+      }
+
+    .gradient2{
+      background-image: linear-gradient(60deg, #385a54 10%, #04262D 100%);
+    border-top-left-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .gradient2:hover{
+        color: #dcedd8;
+    border-top-left-radius: 0px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 12px;
+    }
+
+.text-about-init{
+    font-size: 16px;
+    line-height: 1.8;
+    padding-right: 10px;
+}
 
 
+.footer-green{
+    background-color: #04262D;
+}
 
+.logo-footer{
+    width: 100px;
 
+}
 
 
 
@@ -179,6 +247,11 @@ h1 {
         padding-top: 50px;
         width: 200px;
         height: auto;
+    }
+
+    .logo-footer{
+        width: 250px;
+
     }
 
 }
@@ -343,6 +416,7 @@ h1 {
         text-align: center;
         font-weight: 600;
     }
+
 
 
 

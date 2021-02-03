@@ -12,35 +12,32 @@
 
 
   <!--  Social tags      -->
-  <meta name="keywords" content="creative tim, html dashboard, html css dashboard, web dashboard, bootstrap 4 dashboard, bootstrap 4, css3 dashboard, bootstrap 4 admin, now ui dashboard bootstrap 4 dashboard, frontend, responsive bootstrap 4 dashboard, now ui design, now ui dashboard bootstrap 4 dashboard">
-  <meta name="description" content="Now UI Dashboard PRO is a beautiful Bootstrap 4 admin dashboard with a large number of components, designed to look beautiful, clean and organized. If you are looking for a tool to manage dates about your business, this dashboard is the thing for you.">
+  <meta name="keywords" content="Natural Energy, vitamins, natural, energy, pure, natural products, natural news">
+  <meta name="description" content="Natural Energy es una marca de productos naturales, suplementos alimenticios y energéticos, que nace en 2019 en Guadalajara Jalisco, con la finalidad de llegar al consumidor preocupado por su bienestar y salud">
 
 
   <!-- Schema.org markup for Google+ -->
-  <meta itemprop="name" content="Now Ui Dashboard PRO by Creative Tim">
-  <meta itemprop="description" content="Now UI Dashboard PRO is a beautiful Bootstrap 4 admin dashboard with a large number of components, designed to look beautiful, clean and organized. If you are looking for a tool to manage dates about your business, this dashboard is the thing for you.">
+  <meta itemprop="name" content="Natural Energy healthy life">
+  <meta itemprop="description" content="Natural Energy es una marca de productos naturales, suplementos alimenticios y energéticos, que nace en 2019 en Guadalajara Jalisco, con la finalidad de llegar al consumidor preocupado por su bienestar y salud">
 
-  <meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/72/opt_nudp_thumbnail.jpg">
+  <meta itemprop="image" content="{{ asset('assets') }}/img/mainsite/logos/logo-green.png">
 
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="product">
-  <meta name="twitter:site" content="@creativetim">
-  <meta name="twitter:title" content="[Now Ui Dashboard PRO] by Creative Tim">
+  <meta name="twitter:title" content="Natural Energy | Bienvenidos">
 
-  <meta name="twitter:description" content="Now UI Dashboard PRO is a beautiful Bootstrap 4 admin dashboard with a large number of components, designed to look beautiful, clean and organized. If you are looking for a tool to manage dates about your business, this dashboard is the thing for you.">
+  <meta name="twitter:description" content="Natural Energy es una marca de productos naturales, suplementos alimenticios y energéticos, que nace en 2019 en Guadalajara Jalisco, con la finalidad de llegar al consumidor preocupado por su bienestar y salud">
   <meta name="twitter:creator" content="@creativetim">
-  <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/72/opt_nudp_thumbnail.jpg">
+  <meta name="twitter:image" content="{{ asset('assets') }}/img/mainsite/logos/logo-green.png">
 
 
   <!-- Open Graph data -->
-  <meta property="fb:app_id" content="655968634437471">
-  <meta property="og:title" content="Now Ui Dashboard PRO by Creative Tim" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://demos.creative-tim.com/now-ui-dashboard-pro/examples/dashboard.html" />
-  <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/72/opt_nudp_thumbnail.jpg"/>
-  <meta property="og:description" content="Now UI Dashboard PRO is a beautiful Bootstrap 4 admin dashboard with a large number of components, designed to look beautiful, clean and organized. If you are looking for a tool to manage dates about your business, this dashboard is the thing for you." />
-  <meta property="og:site_name" content="Creative Tim" />
+  <meta property="og:title" content="Natural Energy | Bienvenidos" />
+  <meta property="og:type" content="Site" />
+  <meta property="og:image" content="{{ asset('assets') }}/img/mainsite/logos/logo-green.png"/>
+  <meta property="og:description" content="Natural Energy es una marca de productos naturales, suplementos alimenticios y energéticos, que nace en 2019 en Guadalajara Jalisco, con la finalidad de llegar al consumidor preocupado por su bienestar y salud" />
+  <meta property="og:site_name" content="Natural Energy" />
   <title>
     Natural Energy | Bienvenidos
   </title>
@@ -48,6 +45,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link href="{{ asset('assets') }}/css/mainsite.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 
 </head>
 
@@ -59,6 +58,7 @@
     </div>
         @include('mainsite.layouts.navbar')
         @yield('content')
+        @include('mainsite.layouts.footer')
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

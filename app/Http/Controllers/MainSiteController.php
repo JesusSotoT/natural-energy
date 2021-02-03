@@ -9,7 +9,12 @@ class MainSiteController extends Controller
 {
     public function index(){
 
-        $best_products = Products::where('best_seller', '=', '1')->where('status', '=', '1')->take(5)->get();
+        //Best Seññ ``rpducts requeat
+        $best_products = Products::where('best_seller', '=', '1')->where('status', '=', '1')->take(4)->get();
+
+
+
+        //return view
         return view('mainsite.pages.inicio',[
             'best_products' => $best_products,
         ]);
