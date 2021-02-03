@@ -1,8 +1,8 @@
 
 
 ## Instrucciones
-  1.- Crear una Base de datos en mysql con el nombre 'natural-energy-db' y crear un usuario y contraseña para acceso  total a la misma , ademas de determinar la entrada de cualquier host.
-   2.- Clonar repositorio hacia public_html
+   #1.- Crear una Base de datos en mysql con el nombre 'natural-energy-db' y crear un usuario y contraseña para acceso  total a la misma , ademas de determinar la entrada de cualquier host.
+   #2.- Clonar repositorio hacia public_html
    3.- Una vez descargado ejecutamos el comando `composer dumpautoload` seguido de `composer update` , este descargara todas las dependencias necesarias y relacionara sus clases.
    4.- Ejecutar el comando `php artisan optimize`, seguido de `php artisan storage:link`.
    5.- Dentro de public_html debemos crear o abrir el archivo .env y colocar las siguientes variables de entorno de desarrollo
