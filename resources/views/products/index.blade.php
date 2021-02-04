@@ -78,18 +78,5 @@
 @endsection
 
 @push('js')
-  <script>
-    $(document).ready(function() {
 
-var notify = $.notify('<strong>Gestor de procutos</strong> En este modulo podras...', {
-	type: 'success',
-	allow_dismiss: false,
-});
-
-setTimeout(function() {
-	notify.update({'type': 'success', 'message': '<strong>Agregar</strong> nuevos productos'});
-}, 2000);
-
-    });
-  </script>
 @endpush
