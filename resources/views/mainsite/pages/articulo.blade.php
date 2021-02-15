@@ -5,7 +5,7 @@
         <section class="pb-4">
             <div class="hero-blog">
                 <div class="hero-overlay">
-                    <h4 class="text-hero-blog pt-2">{{ $data->title }}</h4>
+                    <h4 class="text-hero-blog pt-5">{{ $data->title }}</h4>
                 </div>
                 <img src="{{ asset('assets') }}/img/mainsite/blog/covers-detail/{{ $data->cover_image_detail }}"
                     alt="bubbles from surf" class="hero-image">
@@ -33,7 +33,7 @@
                 <!-- Sidebar Widgets Column -->
                 <div class="col-md-4">
 
-                    <!-- Search Widget -->
+                    <!-- Search Widget
                     <div class="card my-4">
                         <h5 class="card-header">Search</h5>
                         <div class="card-body">
@@ -44,9 +44,9 @@
                                 </span>
                             </div>
                         </div>
-                    </div>
+                    </div>  -->
 
-                    <!-- Categories Widget -->
+                    <!-- Categories Widget
                     <div class="card my-3">
                         <h5 class="card-header">Categories</h5>
                         <div class="card-body">
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Side Widget -->
                     <div class="card my-4">
