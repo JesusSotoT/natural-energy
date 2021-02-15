@@ -32,7 +32,7 @@
     </div>
     <div class="row">
         <div class="col-12 text-center pt-4">
-            <input type="submit" class="btn btn-success btn-lg pr-4 pl-4" value="Send"/>
+            <input type="submit" class="btn btn-success btn-lg pr-4 pl-4" value="Enviar"/>
         </div>
     </div>
 </div>
