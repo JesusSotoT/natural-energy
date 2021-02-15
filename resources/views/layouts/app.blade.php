@@ -79,6 +79,9 @@
   <script src="{{ asset('assets') }}/js/now-ui-dashboard.min.js?v=1.3.0" type="text/javascript"></script>
   <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   <script src="{{ asset('assets') }}/demo/demo.js"></script>
+  <script src="https://kit.fontawesome.com/1a77f106f0.js" crossorigin="anonymous"></script>
+  <script src="{{ asset('assets') }}/js/plugins/ckeditor/ckeditor.js"></script>
+
   @stack('js')
 </body>
 

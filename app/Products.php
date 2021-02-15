@@ -17,6 +17,7 @@ class Products extends Model
     'recomend',
     'warning',
     'image'.
+    'nutrition_table_image',
     'status',
     'created_at',
     'updated_at'];

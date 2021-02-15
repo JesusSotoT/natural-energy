@@ -45,24 +45,38 @@
               <tbody>
                   @foreach ($product as $p)
                   <tr>
-                    <td>{{ $p->id }}</td>
-                    <td width="40%">{{ $p->name }}</td>
+                    <td width="2%">{{ $p->id }}</td>
+                    <td width="30%">{{ $p->name }}</td>
                     <td width="10%">{{ $p->content }}</td>
                     @if ($p->image == null)
-                    <td width="20%" class="text-right"><img class="img-fluid" width="25%" src="{{ asset('assets') }}/products/generic.jpg" alt="Imagen producto {{ $p->id }}"></td>
+                    <td width="10%" class="text-right"><img class="img-fluid" width="25%" src="{{ asset('assets') }}/products/thumbnails/generic.png" alt="Imagen producto {{ $p->id }}"></td>
                     @else
-                    <td class="text-right"><img class="img-fluid" width="25%" src="{{ asset('assets') }}/products/{{ $p->image }}" alt="Imagen producto {{ $p->id }}"></td>
+                    <td  width="10%"  class="text-right"><img class="img-fluid" width="25%" src="{{ asset('assets') }}/products/thumbnails/{{ $p->image }}" alt="Imagen producto {{ $p->id }}"></td>
                     @endif
-                    <td class="text-center">
+                    <td class="text-center" width="15%">
                        <!--  <a type="button" href="{{route("user.edit",$p->id)}}" rel="tooltip" class="btn btn-success btn-icon btn-sm " data-original-title="" title="">
                             <i class="now-ui-icons ui-2_settings-90"></i>
                           </a> -->
+                         <!-- <form action="{{ route('view-product', $p->id) }}" method="post" style="display:inline-block;" class ="delete-form">
+                            @csrf
+                            <input type="text" name="id" hidden value="{{ $p->id }}">
+                            <button type="submit"  class="btn btn-primary btn-icon btn-sm delete-button"  title="Ver">
+                                <i class="far fa-eye"></i>
+                            </button>
+                          </form> -->
+                          <form action="{{ route('update-product', $p->id) }}" method="post" style="display:inline-block;" class ="delete-form">
+                            @csrf
+                            <input type="text" name="id" hidden value="{{ $p->id }}">
+                            <button type="submit" class="btn btn-info btn-icon btn-sm delete-button"  title="Modificar">
+                                <i class="fas fa-pencil-alt"></i>
+                            </button>
+                          </form>
                         <form action="{{ route('destroy-product', $p->id) }}" method="post" style="display:inline-block;" class ="delete-form">
                           @csrf
                           <input type="text" name="id" hidden value="{{ $p->id }}">
-                          <button type="button" rel="tooltip" class="btn btn-danger btn-icon btn-sm delete-button" data-original-title="" title="" onclick="confirm('{{ __('Esta Seguro de eliminar el producto?') }}') ? this.parentElement.submit() : ''">
-                            <i class="now-ui-icons ui-1_simple-remove"></i>
-                          </button>
+                          <button type="button" rel="tooltip" class="btn btn-danger btn-icon btn-sm delete-button" data-original-title="Eliminar" title="Eliminar" onclick="confirm('{{ __('Esta Seguro de eliminar el producto?') }}') ? this.parentElement.submit() : ''">
+                            <i class="fas fa-times"></i>
+                        </button>
                         </form>
                       </td>
                   </tr>

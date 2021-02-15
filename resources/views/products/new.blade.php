@@ -43,10 +43,20 @@
                         <label for="warningProduct">Advertencias:</label>
                         <textarea id="warningProduct" name="warning" class="form-control" cols="40" rows="40"></textarea>
                       </div>
-                      <p>Imagen:</p>
+                      <p>Imagen de producto (1400 × 900 px):</p>
                       <div class="custom-file mb-3">
                         <input type="file" class="custom-file-input" id="customFile" name="customFile">
                         <label class="custom-file-label" for="customFile">Choose file</label>
+                      </div>
+                      <p>Imagen miniatura de tienda (90 × 190 px):</p>
+                      <div class="custom-file mb-3">
+                        <input type="file" class="custom-file-input" id="thumbnailImage" name="thumbnailImage">
+                        <label class="custom-file-label" for="thumbnailImage">Choose file</label>
+                      </div>
+                      <p>Imagen tabla nutrimental(1000 × 890 px):</p>
+                      <div class="custom-file mb-3">
+                        <input type="file" class="custom-file-input" id="tableImage" name="tableImage">
+                        <label class="custom-file-label" for="tableImage">Choose file</label>
                       </div>
                       <div class="row float-right">
                           <div class="col-4">
@@ -66,18 +76,5 @@
 @endsection
 
 @push('js')
-  <script>
-    $(document).ready(function() {
 
-var notify = $.notify('<strong>Gestor de procutos</strong> En este modulo podras...', {
-	type: 'success',
-	allow_dismiss: false,
-});
-
-setTimeout(function() {
-	notify.update({'type': 'success', 'message': '<strong>Agregar</strong> nuevos productos'});
-}, 2000);
-
-    });
-  </script>
 @endpush

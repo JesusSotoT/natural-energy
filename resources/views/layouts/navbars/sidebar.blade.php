@@ -19,6 +19,12 @@
           <p>{{ __('Gestor de productos') }}</p>
         </a>
       </li>
+      <li class="@if ($activePage == 'articles') active @endif">
+        <a href="{{ route('articles') }}">
+          <i class="now-ui-icons design-2_ruler-pencil"></i>
+          <p>{{ __('Gestor de Blog') }}</p>
+        </a>
+      </li>
     </ul>
   </div>
 </div>
